@@ -32,7 +32,8 @@ function App() {
     guests: "2",
   });
 
-  const whatsappNumber = "919876543210";
+  const whatsappNumber = "917040710511";
+
 
   function handleBooking(e) {
     e.preventDefault();
