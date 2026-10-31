@@ -34,14 +34,15 @@ function App() {
 
   const whatsappNumber = "917040710511";
 
-
   function handleBooking(e) {
     e.preventDefault();
 
     const message = `
 Hotel Booking Enquiry
 
-Name: ${booking.name}
+
+
+Name:     ${booking.name}
 Phone: ${booking.phone}
 Check-in: ${booking.checkin}
 Check-out: ${booking.checkout}
@@ -76,6 +77,7 @@ Guests: ${booking.guests}
           <a href="#rooms" onClick={() => setMenuOpen(false)}>
             Rooms
           </a>
+
           <a href="#facilities" onClick={() => setMenuOpen(false)}>
             Facilities
           </a>
@@ -236,7 +238,7 @@ Guests: ${booking.guests}
         <section className="contact section" id="contact">
           <h2>We Would Love to Welcome You</h2>
           <p>📍 Your Hotel Address, Your City</p>
-          <p>📞 +91 98765 43210</p>
+          <p>📞 +91 7040710511</p>
           <a
             href={`https://wa.me/${whatsappNumber}`}
             target="_blank"
@@ -254,7 +256,6 @@ Guests: ${booking.guests}
       </footer>
     </>
   );
-  
 }
 
 export default App;
